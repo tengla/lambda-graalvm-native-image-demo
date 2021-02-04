@@ -23,7 +23,7 @@ WORKDIR /usr/src/app
 RUN /usr/lib/graalvm/bin/gu install native-image
 RUN /usr/lib/graalvm/bin/native-image --install-exit-handlers \
     --no-fallback \
-    -jar build/libs/trafficinfo-baseline-lambda-${APP_VERSION}}-all.jar
+    -jar build/libs/trafficinfo-baseline-lambda-${APP_VERSION}-all.jar
 RUN chmod 777 bootstrap lambda
 RUN zip -j function.zip bootstrap lambda
 EXPOSE 8080
