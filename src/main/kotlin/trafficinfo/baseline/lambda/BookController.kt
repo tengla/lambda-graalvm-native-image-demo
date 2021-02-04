@@ -12,6 +12,13 @@ open class BookController {
 
   var books: MutableList<BookSaved> = mutableListOf()
 
+  init {
+    val book = BookSaved()
+    book.name = "A Road Less Traveled"
+    book.isbn = UUID.randomUUID().toString()
+    books.add(book)
+  }
+
   @Get
   open fun index(): MutableList<BookSaved> {
     return books
