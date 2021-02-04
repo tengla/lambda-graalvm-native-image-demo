@@ -2,8 +2,8 @@
 
 This is a baseline app with a docker deploy script.
 
-To build this on your machine, run: `sh deploy.sh`.
-The output `build/function.zip` can now be uploaded to your
+To build this locally, run: `sh deploy.sh`.
+The artifact `build/function.zip` can now be uploaded to your
 AWS Lambda function.
 
 ## Micronaut 2.3.1 Documentation
