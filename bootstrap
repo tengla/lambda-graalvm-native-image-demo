@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# set -euo pipefail
+echo "Booting this lambda function immediately in $(pwd)"
+ls -lh
+env
+./lambda -Xmx512m -Djava.library.path=$(pwd)
